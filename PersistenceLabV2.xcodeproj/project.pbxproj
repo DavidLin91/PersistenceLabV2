@@ -3,17 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		632949DA23D8DD86006CF080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632949D923D8DD86006CF080 /* AppDelegate.swift */; };
 		632949DC23D8DD86006CF080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632949DB23D8DD86006CF080 /* SceneDelegate.swift */; };
-		632949DE23D8DD86006CF080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632949DD23D8DD86006CF080 /* ViewController.swift */; };
+		632949DE23D8DD86006CF080 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632949DD23D8DD86006CF080 /* SearchViewController.swift */; };
 		632949E123D8DD86006CF080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632949DF23D8DD86006CF080 /* Main.storyboard */; };
 		632949E323D8DD8D006CF080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632949E223D8DD8D006CF080 /* Assets.xcassets */; };
 		632949E623D8DD8E006CF080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632949E423D8DD8E006CF080 /* LaunchScreen.storyboard */; };
 		632949F123D8DD8E006CF080 /* PersistenceLabV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632949F023D8DD8E006CF080 /* PersistenceLabV2Tests.swift */; };
+		636BCD1C23D8E033004BC3D0 /* DetailedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BCD1B23D8E033004BC3D0 /* DetailedPhotoViewController.swift */; };
+		636BCD1E23D8E10C004BC3D0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BCD1D23D8E10C004BC3D0 /* PhotoCollectionViewCell.swift */; };
+		636BCD2123D8E173004BC3D0 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 636BCD2023D8E173004BC3D0 /* ImageKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +33,7 @@
 		632949D623D8DD86006CF080 /* PersistenceLabV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersistenceLabV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632949D923D8DD86006CF080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632949DB23D8DD86006CF080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		632949DD23D8DD86006CF080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		632949DD23D8DD86006CF080 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		632949E023D8DD86006CF080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		632949E223D8DD8D006CF080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632949E523D8DD8E006CF080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,8 @@
 		632949EC23D8DD8E006CF080 /* PersistenceLabV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersistenceLabV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632949F023D8DD8E006CF080 /* PersistenceLabV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLabV2Tests.swift; sourceTree = "<group>"; };
 		632949F223D8DD8E006CF080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636BCD1B23D8E033004BC3D0 /* DetailedPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPhotoViewController.swift; sourceTree = "<group>"; };
+		636BCD1D23D8E10C004BC3D0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636BCD2123D8E173004BC3D0 /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +110,7 @@
 		632949FB23D8DDE4006CF080 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				632949DD23D8DD86006CF080 /* ViewController.swift */,
+				636BCD1D23D8E10C004BC3D0 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +118,8 @@
 		632949FC23D8DDF7006CF080 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				636BCD1B23D8E033004BC3D0 /* DetailedPhotoViewController.swift */,
+				632949DD23D8DD86006CF080 /* SearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -139,6 +147,9 @@
 			dependencies = (
 			);
 			name = PersistenceLabV2;
+			packageProductDependencies = (
+				636BCD2023D8E173004BC3D0 /* ImageKit */,
+			);
 			productName = PersistenceLabV2;
 			productReference = 632949D623D8DD86006CF080 /* PersistenceLabV2.app */;
 			productType = "com.apple.product-type.application";
@@ -189,6 +200,9 @@
 				Base,
 			);
 			mainGroup = 632949CD23D8DD86006CF080;
+			packageReferences = (
+				636BCD1F23D8E173004BC3D0 /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = 632949D723D8DD86006CF080 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -224,9 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632949DE23D8DD86006CF080 /* ViewController.swift in Sources */,
+				632949DE23D8DD86006CF080 /* SearchViewController.swift in Sources */,
+				636BCD1E23D8E10C004BC3D0 /* PhotoCollectionViewCell.swift in Sources */,
 				632949DA23D8DD86006CF080 /* AppDelegate.swift in Sources */,
 				632949DC23D8DD86006CF080 /* SceneDelegate.swift in Sources */,
+				636BCD1C23D8E033004BC3D0 /* DetailedPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +509,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		636BCD1F23D8E173004BC3D0 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		636BCD2023D8E173004BC3D0 /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 636BCD1F23D8E173004BC3D0 /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 632949CE23D8DD86006CF080 /* Project object */;
 }
