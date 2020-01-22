@@ -17,6 +17,10 @@
 		636BCD1C23D8E033004BC3D0 /* DetailedPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BCD1B23D8E033004BC3D0 /* DetailedPhotoViewController.swift */; };
 		636BCD1E23D8E10C004BC3D0 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BCD1D23D8E10C004BC3D0 /* PhotoCollectionViewCell.swift */; };
 		636BCD2123D8E173004BC3D0 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 636BCD2023D8E173004BC3D0 /* ImageKit */; };
+		636BCD2523D8E21B004BC3D0 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BCD2423D8E21B004BC3D0 /* FavoritesViewController.swift */; };
+		636BCD2723D8E253004BC3D0 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BCD2623D8E253004BC3D0 /* Photos.swift */; };
+		636BCD2923D8E2A0004BC3D0 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BCD2823D8E2A0004BC3D0 /* FileManager+Extensions.swift */; };
+		636BCD2B23D8E897004BC3D0 /* PhotosAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BCD2A23D8E897004BC3D0 /* PhotosAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		632949F223D8DD8E006CF080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		636BCD1B23D8E033004BC3D0 /* DetailedPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPhotoViewController.swift; sourceTree = "<group>"; };
 		636BCD1D23D8E10C004BC3D0 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		636BCD2423D8E21B004BC3D0 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		636BCD2623D8E253004BC3D0 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		636BCD2823D8E2A0004BC3D0 /* FileManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
+		636BCD2A23D8E897004BC3D0 /* PhotosAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +126,9 @@
 		632949FC23D8DDF7006CF080 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				636BCD1B23D8E033004BC3D0 /* DetailedPhotoViewController.swift */,
 				632949DD23D8DD86006CF080 /* SearchViewController.swift */,
+				636BCD1B23D8E033004BC3D0 /* DetailedPhotoViewController.swift */,
+				636BCD2423D8E21B004BC3D0 /* FavoritesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +136,9 @@
 		632949FD23D8DE19006CF080 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				636BCD2623D8E253004BC3D0 /* Photos.swift */,
+				636BCD2823D8E2A0004BC3D0 /* FileManager+Extensions.swift */,
+				636BCD2A23D8E897004BC3D0 /* PhotosAPIClient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,9 +252,13 @@
 			files = (
 				632949DE23D8DD86006CF080 /* SearchViewController.swift in Sources */,
 				636BCD1E23D8E10C004BC3D0 /* PhotoCollectionViewCell.swift in Sources */,
+				636BCD2B23D8E897004BC3D0 /* PhotosAPIClient.swift in Sources */,
 				632949DA23D8DD86006CF080 /* AppDelegate.swift in Sources */,
 				632949DC23D8DD86006CF080 /* SceneDelegate.swift in Sources */,
+				636BCD2523D8E21B004BC3D0 /* FavoritesViewController.swift in Sources */,
+				636BCD2923D8E2A0004BC3D0 /* FileManager+Extensions.swift in Sources */,
 				636BCD1C23D8E033004BC3D0 /* DetailedPhotoViewController.swift in Sources */,
+				636BCD2723D8E253004BC3D0 /* Photos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

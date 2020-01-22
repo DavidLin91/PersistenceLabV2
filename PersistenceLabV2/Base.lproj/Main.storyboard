@@ -24,19 +24,20 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hdK-I0-siD">
-                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="itemSize" width="189" height="182"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="S3I-Kj-wc9">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="S3I-Kj-wc9" customClass="PhotoCollectionViewCell" customModule="PersistenceLabV2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="189" height="182"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="czC-RC-7sq">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="189" height="182"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="189" height="182"/>
                                         <connections>
                                             <segue destination="Gub-XP-i65" kind="show" id="Jcq-fo-v2f"/>
                                         </connections>
@@ -89,17 +90,34 @@
                     </tabBar>
                     <connections>
                         <segue destination="QN1-j3-8iU" kind="relationship" relationship="viewControllers" id="2s5-CX-Tyq"/>
+                        <segue destination="uIn-Kg-0kY" kind="relationship" relationship="viewControllers" id="eLy-ey-pZj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ET-Al-yQF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="71" y="662"/>
         </scene>
-        <!--Item-->
+        <!--Favorites-->
+        <scene sceneID="CZv-68-ELr">
+            <objects>
+                <viewController id="uIn-Kg-0kY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mO8-ZI-NRg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pyd-KD-1sv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" id="bvh-PW-5Y9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXs-pY-Dsi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="950"/>
+        </scene>
+        <!--Search-->
         <scene sceneID="Yv0-LW-XIS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QN1-j3-8iU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="5NQ-l8-aEe"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="5NQ-l8-aEe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="udi-bv-Ldf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -115,4 +133,8 @@
             <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
